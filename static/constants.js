@@ -7,7 +7,8 @@ define([], function(){
 		"refreshToken" : "api/updateSession",
 		"changeProfileInfo": "api/changeProfileInfo",
 		"changePassword": "api/changePassword",
-		"logoutAllDevices": "api/logoutAll"
+		"logoutAllDevices": "api/logoutAll",
+		"show_session_timeout" : 2//time-out modal will pop-up before 2 mins of server time-out.
 	}
 	
 	return config;

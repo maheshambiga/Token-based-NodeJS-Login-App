@@ -27,7 +27,7 @@ define([
 			
 			this.timer = null;
 			
-			this.notifyBefore = 14;//time-out modal will pop-up before 2 mins of server time-out.
+			this.notifyBefore = constants.show_session_timeout;
 			
 			this.render();
 		},
