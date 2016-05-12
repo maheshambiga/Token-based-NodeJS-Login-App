@@ -1,0 +1,34 @@
+{
+  "name": "express_mongodb_backbone_login",
+  "version": "1.0.0",
+  "description": "Local login using express, mongodb and backbone.",
+  "scripts": {
+	"start": "SET NODE_ENV=development & node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maheshambiga/express_mongodb_backbone_login.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "MongoDB",
+    "NodeJS Login App",
+    "NodeJS Local login app",
+    "token based authentication"
+  ],
+  "author": "Mahesh Ambig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maheshambiga/express_mongodb_backbone_login/issues"
+  },
+  "homepage": "https://github.com/maheshambiga/express_mongodb_backbone_login#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "express-jwt": "^3.4.0",
+    "jsonwebtoken": "^6.2.0",
+    "mongoose": "^4.4.16",
+    "morgan": "^1.7.0"
+  }
+}

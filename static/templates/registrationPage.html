@@ -1,0 +1,64 @@
+<div class="row">
+
+	<div class="col-xs-12 col-sm-6 col-md-6">
+	
+		<h1>Register</h1>
+		
+		<form class="form-horizontal" id="user-registration">
+		  <div class="form-group">
+			<label for="name" class="col-md-4 control-label">First Name</label>
+			<div class="col-md-8">
+			  <input type="input" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="name" class="col-md-4 control-label">Last Name</label>
+			<div class="col-md-8">
+			  <input type="input" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="email" class="col-md-4 control-label">Email</label>
+			<div class="col-md-8">
+			  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="password" class="col-md-4 control-label">Password</label>
+			<div class="col-md-8">
+			  <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="confirmPassword" class="col-md-4 control-label">Repeat Password</label>
+			<div class="col-md-8">
+			  <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Repeat Password">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-8">
+				<%if(!_.isUndefined(formMsg) && formMsg.length>0){%>
+					<p class="text-danger"><%=formMsg%></p>
+				<%}%>
+				
+			</div>
+		  </div>
+		 
+		    <div class="form-group">
+				<div class="col-md-offset-4 col-md-8">
+					<button type="submit" class="btn btn-primary" name="submit">Sign up</button>
+				  <span>or</span>
+				  <a class="show-login" href="/#login">login</a>
+				</div>
+			</div>
+		  
+		</form>
+	
+	
+	</div>
+	<div class="col-xs-6 col-md-4"></div>
+
+
+</div>

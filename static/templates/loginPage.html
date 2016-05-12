@@ -1,0 +1,47 @@
+<div class="row">
+
+	<div class="col-xs-12 col-sm-6 col-md-6">
+	
+		<h1>Sign in</h1>
+		
+		<form class="form-horizontal" id="loginForm">
+		  <div class="form-group">
+			<label for="inputEmail3" class="col-md-4 control-label">Email</label>
+			<div class="col-md-8">
+			  <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputPassword3" class="col-md-4 control-label">Password</label>
+			<div class="col-md-8">
+			  <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+			</div>
+		  </div>
+		  
+		  <div class="form-group">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-8">
+				<%if(!_.isUndefined(authErrMsg) && authErrMsg.length>0){%>
+					<p class="text-danger"><%=authErrMsg%></p>
+				<%}%>
+				
+			</div>
+		  </div>
+		 
+		    <div class="form-group">
+				<div class="col-md-offset-4 col-md-8">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				  <span>or</span>
+				  <a ui-sref="auth.register" class="show-signup" href="/#register">Sign up</a>
+				</div>
+			</div>
+		  
+		</form>
+	
+	
+	</div>
+	<div class="col-xs-6 col-md-4"></div>
+
+
+</div>
